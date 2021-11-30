@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-   <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Card form</label>
-            </div>
-            <div
-            <label for="ccname">Name on Card</label>
-            <input type="text" id="ccname" name="ccname" placeholder="John More Doe" autocomplete="on">
-
-            <label for="cardnumber">Credit card number</label>
-            <input type="number" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444" autocomplete="on">
-
-            <label for="cvc">Cvc</label>
-            <input type="number" id="cvc" name="cvc" placeholder="352" autocomplete="on">
-
-             <label for="cc-exp">Exp Month</label>
-            <input type="number" id="cc-exp" name="cc-exp" placeholder="September" autocomplete="on">
-             </div>
-
-  </body>
-</html>
+<html lang="en"><body translate="no">
+  <h2>How to Create Checkout Form HTML and CSS3</h2>
+  <h3>Fill this form. We've a secure payment system you no need to worry</h3>
+<form>
+<div class="soft-container">
+<div class="soft-info">
+<h1>Secure Payment</h1>
+</div> 
+<input type="text" required="required" name="first-name" placeholder="Name on Card" />
+<input id="get-input" required="required" type="text" name="number" placeholder="Card Number" />
+<input id="co-left" required="required" type="text" name="expiry" placeholder="MM / YY" />
+<input id="co-right" required="required" type="text" name="cvc" placeholder="CCV" />
+<div class="card-info"></div>
+<input id="get-input" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Compelete Address" />
+<input id="input-button" type="submit" value="Pay Now" />
+</form>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://softcodeon.com/cm/card.js'></script>
